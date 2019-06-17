@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Restaurants</string>
+    <string name="load_error">There was an error loading the restaurants.</string>
+    <string name="retry_action">Retry</string>
+    <string name="location_denied">Location permission denied. Using default location.</string>
+    <string name="click_here_to_open_menu">Click here to open menu</string>
+    <string name="location_error">Location couldn\'t be retrieved. Using default location.</string>
+</resources>

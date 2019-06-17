@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.fragments.DetailsFragment"
+            android:padding="@dimen/padding_16">
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/detail_image"
+                   android:maxHeight="@dimen/image_max_height"
+                   android:scaleType="centerCrop"
+                   tools:src="@drawable/ic_launcher_background"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/detail_name"
+                  app:layout_constraintTop_toBottomOf="@+id/detail_image"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  tools:text="Restaurant name"
+                  android:textSize="@dimen/venue_name_size"
+                  android:textStyle="bold"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_description"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/detail_name"
+                  tools:text="Restaurant description if available"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_price"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_description"
+                  tools:text="$$$$ (very expensive)"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_price"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_phone"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_price"
+                  tools:text="555-555-555"
+                  android:autoLink="phone"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_phone"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_rating"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_phone"
+                  tools:text="8.8/10"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_rating"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_categories"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_rating"
+                  tools:text="Tacos, Italian, Food"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_category"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_url"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_categories"
+                  tools:text="www.restaurant.com"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_web"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_menu"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_url"
+                  tools:text="Click to see menu"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_menu"
+                  android:text="@string/click_here_to_open_menu"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_address"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_menu"
+                  tools:text="Address"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_address"
+                  android:drawablePadding="@dimen/padding_16"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/details_hours"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/details_address"
+                  tools:text="Mon-Fri 8am to 10pm"
+                  android:textSize="@dimen/details_text_size"
+                  android:paddingBottom="@dimen/padding_16"
+                  android:drawableLeft="@drawable/ic_times"
+                  android:drawablePadding="@dimen/padding_16"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

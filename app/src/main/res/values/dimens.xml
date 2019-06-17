@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="map_info_window_padding">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="info_window_title_size">18sp</dimen>
+    <dimen name="addres_size">16sp</dimen>
+    <dimen name="margin_top_info_window">8dp</dimen>
+    <dimen name="venue_name_size">18sp</dimen>
+    <dimen name="details_text_size">16sp</dimen>
+    <dimen name="image_max_height">200dp</dimen>
+</resources>

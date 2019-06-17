@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:padding="@dimen/map_info_window_padding">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/venue_name"
+              tools:text="Restaurant name"
+              android:textSize="@dimen/info_window_title_size"
+              app:layout_constraintTop_toTopOf="parent"
+              android:textStyle="bold"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/venue_address"
+              tools:text="Address"
+              android:textSize="@dimen/addres_size"
+              app:layout_constraintTop_toBottomOf="@id/venue_name"
+              android:layout_marginTop="@dimen/margin_top_info_window"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
